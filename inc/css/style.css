@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Poppins&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+h1,h2{
+    font-family: 'Merienda', cursive;
+    color: #396C03;
+}
+ul{
+    padding-left: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header Part */
+.head{
+    background:rgba(107, 145, 66, 0.1);
+}
+.head
+/* Navigation */
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.toggle-icon{
+    display: flex;
+    height: 40px;
+    width: 39px;
+    align-items:center;
+    position: relative;
+    overflow: hidden;
+}
+.l{
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background:#FF8B00 ;
+    transition: all ease-in-out .4s;
+}
+.line1{
+    transform: translateY(-15px);
+}
+.line3{
+    left: 9px;
+}
+.line2{
+    transform: translateY(15px);
+}
+.line1.nline{
+    transform: translateY(0px) rotate(45deg);
+}
+.line2.nline{
+    transform: translateY(0px) rotate(315deg);
+}
+.line3.nline{
+    left: 70px;
+}
+.navigation{
+    padding: 20.5px 0;
+    border-bottom: 1px solid #3F3F3F;
+}
+.navbar-brand{
+    flex-basis: 40%;
+}
+.mywidth{
+    flex-basis: 60%;
+    justify-content: space-between;
+}
+.navigation .nav-link{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #3F3F3F;
+}
+.login .mybtn{
+    padding: 12px 50px;
+    background: #396C03;
+    border-radius: 225px;
+    color: #fff;
+    line-height: 2.2rem;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login .cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    background:#396C03;
+    font-size: 28px;
+    border-radius: 50%;
+    color: #ffffff;
+    margin-left: 23px;
+}
+.login .cart .badge{
+    display: flex;
+    background: #FF8B00;
+    width: 26px;
+    height: 26px;
+    right: -5px;
+    top: -12px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;   
+}
+.down-head{
+    position: relative;
+    padding: 132px 0 96px 0;
+}
+.down-head .left-image{
+    position: absolute;
+    left: 2px;
+    top: -70px;
+    z-index: -1;
+}
+.down-head .right-image{
+    position: absolute;
+    right: 2%;
+    top: -8px;
+    z-index: -1;
+}
+.delivered{
+    position: absolute;
+    padding: 18px 28px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
+    border-radius: 8.86914px;
+    top: 72px;
+    right: 14%;
+}
+.delivered p{
+    font-size: 40px;
+    line-height: 52px;
+    color: #FF8B00;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.delivered h4{
+    text-align: center;
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: 600;
+    margin: 0;
+    color: #838383;
+}
+
+.down-head .text h1{
+    font-weight: 700;
+    font-size: 3.61rem;
+    line-height: 4.67rem;
+}
+.down-head .text h5{
+    font-weight: 600;
+    font-size: 1.33rem;
+    line-height:1.89rem ;
+    color: #676767;
+    margin: 1.5rem 0;
+}
+.search .f-wraper{
+    position: relative;
+}
+.search .f-wraper input{
+    width: 100%;
+    padding: 15px 10px;
+    padding-left: 70px;
+    border: 2px solid #396C03;
+    border-radius: 120px;
+    font-size: 22px;
+    color:  #C7C7C7;
+}
+.search .f-wraper::after{
+    content: "";
+    position: absolute;
+    height: 49px;
+    width: 49px;
+    background: #FF8B00;
+    border-radius: 50%;
+    top: 50%;
+    left: 9px;
+    transform: translateY(-50%);
+}
+.search .f-wraper .search-btn{
+    font-size: 22px;
+    background: #396C03;
+    padding: 15.5px 50px;
+    border-radius: 120px;
+    color: #ffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sec-2{
+    padding:8.1rem 0;
+    background: rgba(255, 139, 0, 0.05);
+}
+.sec-2 h2{
+    font-weight: 700;
+    font-size: 2.78rem;
+    line-height: 3.61rem;
+    margin-bottom: 10px;
+}
+.sec-2 p{
+    line-height: 1.61rem;
+    margin-bottom: 14px;
+}
+.sec-2 .mybtn{
+    padding: 15px 60px;
+    background: #396C03;
+    color: #ffff;
+    border-radius: 224.4px;
+}
+.building{
+    overflow: hidden;
+}
+@keyframes run{
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+       transform: translateX(100%);
+    }
+}
+.cycle{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: run  5s linear infinite;
+}
+@keyframes swing {
+    0%{
+        transform: rotate(-15deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+.delivered{
+    transform-origin: top center;
+    animation: swing 3s linear infinite;
+}

@@ -1,0 +1,89 @@
+@media only screen and (max-width: 1200px) {
+    body {
+     font-size: 14px;
+    }
+    .navbar-brand {
+        flex-basis: 30%;
+    }
+    .navigation .nav-link{
+        line-height: 1.5rem;
+    }
+    .login .mybtn {
+        padding: 0px 27px;
+        background: #396C03;
+        border-radius: 225px;
+        color: #fff;
+        line-height: 2.2rem;
+    }
+    .login .cart{
+        height: 40px;
+        width: 40px;
+        font-size: 1rem;
+    }
+    .head .navigation {
+        padding: 6.5px 0;
+    }
+  }
+  @media only screen and (max-width: 1199px){
+    .down-head .text h1 {
+        font-size: 50px;
+    }
+  } 
+  @media only screen and (max-width:991px){
+    .down-head .text h1 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 2.67rem;
+    }
+    .down-head .text h5{
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+    .delivered p {
+        font-size: 25px;
+        line-height: 35px;
+        color: #FF8B00;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .delivered h4{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .search .f-wraper input{
+        font-size: 14px;
+    }
+    .search .f-wraper .search-btn {
+        font-size: 14px;
+        background: #396C03;
+        padding: 15.5px 15px;
+        border-radius: 120px;
+    }
+    .search .f-wraper::after{
+        height: 30px;
+        width: 30px;
+    }
+  }
+  @media only screen and (max-width:767px){
+    .down-head .text h1{
+        padding-top: 70px;
+        text-align: center;
+    }
+    .down-head .text h5{
+        text-align: center;
+    }
+    .down-head .right-image{
+        top: 71%;
+    }
+    .delivered{
+        top: 86%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+  }
+  @media only screen and (max-width:575px){
+    .delivered p{
+        font-size: 18px;
+        line-height: 1.2em;
+    }
+  }
